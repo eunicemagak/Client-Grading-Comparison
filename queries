@@ -14,5 +14,5 @@ FROM
 WHERE 
   ((DATE(approved_date) BETWEEN '2022-08-01'
   AND '2023-05-31') AND DATE(due_date) < current_date() )
-  GROUP BY  Month
-  ORDER BY Month
+GROUP BY  Month
+ORDER BY Month
