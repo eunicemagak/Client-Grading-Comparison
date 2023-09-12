@@ -29,7 +29,7 @@ FROM
   INNER JOIN profile p ON a.profile_id = p.profile_id 
 WHERE 
   DATEDIFF(a.pay_date, a.due_date) > 0 
-  AND DATE(a.due_date) >= '2022-08-01'
+  AND DATE(a.due_date) BETWEEN '2022-08-01' AND '2023-05-31'
 GROUP BY Period;
 
 
